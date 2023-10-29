@@ -6,17 +6,25 @@
 // The toLowerCase() method is called on the string "Hello World"
 // No arguments are passed; toLowerCase() has one clear job which is to lowercase all letters that exist in the String
 // The return value is "hello world"
-"Hello World".toLowerCase();
+console.log("Hello World".toLowerCase()); 
 
 
-"Hello World".includes("Hello");
+console.log("Hello World".includes("Hello"));
+// The includes() method is called on the string "Hello World"
+// One arguement is passed; includes() wants the given data "Hello" to be included the String
+// The return value is true
 
 
-"Hello World".endsWith("Hello");
+console.log("Hello World".endsWith("Hello"));
+// The endsWith() method is called on the string "Hello World"
+// One argument is passed; endsWith() wants the string to end with "Hello"
+// The return value is false
 
 
-"Hello World".endsWith("rld");
-
+console.log("Hello World".endsWith("rld"));
+// The endsWith() method is called on the string "Hello World"
+// One argument is passed; endsWith() wants the string to end with "rld"
+// The return value is true
 
 
 // SECTION 2: Calling methods on variables assigned to strings.
@@ -24,6 +32,19 @@
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 // Include comments above each method call explaining the impact and return value of that method.
+var firstName = "Barry"
+var eyeColor = "Brown"
+
+console.log(firstName .endsWith("n"));
+// The ensWith() method is called on the variable firstName
+// One argument is passed; endsWith() wants the variable to end with "n"
+// The return value is false
+
+
+console.log(eyeColor .includes("ow"));
+// The includes() method is called on the variable eyeColor
+// One argument is passed; includes() wants the variable to include "ow"
+// The return value is true
 
 // EXAMPLE
 // The startsWith() method is called on the firstName variable, which stores the string object "Jeff". 
@@ -40,3 +61,8 @@ console.log(firstName.startsWith("J"));
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
+
+var prices = [24, 98, 64, 17];
+var money = ["Quarter", "Dime", "Penny", "Nickel"];
+
+console.log
