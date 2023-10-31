@@ -62,7 +62,12 @@ console.log(firstName.startsWith("J"));
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
 
-var prices = [24, 98, 64, 17];
-var money = ["Quarter", "Dime", "Penny", "Nickel"];
-
-console.log
+var a,b,c;
+var arr = [1,2,3];
+[a,b,c] = arr;
+console.log(arr.includes(1));
+// The includes() method is called on the arr variable, which stores the array [1,2,3]
+// The includes method returns true if the array includes the number 1
+console.log(arr.includes(4));
+// The includes() method is called on the arr variable, which stores the array [1,2,3]
+// The includes method returns false because the array does not included the number 4
