@@ -29,11 +29,28 @@ function square(x) { return x*x; }
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 
+
+var salsa = 1
+var tortillas = 3
+var coffee = 4
+var cheese = 0
+
+function checkStock(product){ if (product === 4) {
+    console.log(`Coffee is stocked`);
+  } else if (product < 4 && product > 2) {
+    console.log(`Tortillas - running LOW`);
+  } else if (product < 4 && product === 1) {
+    console.log(`Salsa - running LOW`);
+  } else if (product < 1) { console.log(`Cheese - out of stock!`); }}
+
+
 checkStock(4, "Coffee");
 // => "Coffee is stocked"
 
+
 checkStock(3, "Tortillas");
 // => "Tortillas - running LOW"
+
 
 checkStock(0, "Cheese");
 // => "Cheese - OUT of stock!"
